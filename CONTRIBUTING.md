@@ -56,5 +56,4 @@ Read more about [Git Commit Templating].
 [Contributor Covenant]: http://contributor-covenant.org
 [Git Commit Templating]: https://git-scm.com/docs/git-commit#git-commit---templateltfilegt
 [GitHub Guides]: https://guides.github.com/
-[issues]: https://github.com/kalisjoshua/lean-rfc/issues
 [Lean RFC]: https://github.com/kalisjoshua/lean-rfc
