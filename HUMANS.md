@@ -19,12 +19,22 @@ the [Contributors Pledge](#contributors-pledge) you are pledging you will:
 
 # Contributors
 
+The list of "Contributors" are people who have added to or improved the project
+but do not have the responsibilities of a "Maintainer". People who contribute
+can, optionally, add their name to this list; all fields are optional.
+
 Name                      | Twitter               | Location
 ----                      | -------               | --------
                           |                       |
 
+*To remove as much ambiguity as possible, the list should be ordered
+alphabetically by Twitter (username).*
+
 
 ## Maintainers
+
+Project "Maintainers" curate changes and help incorporate contributions from
+anyone willing to donate their time to add value and improve the project.
 
 Name                      | Twitter               | Location
 ----                      | -------               | --------
