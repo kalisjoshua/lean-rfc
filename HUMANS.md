@@ -2,12 +2,16 @@
 
 Thank you, to everyone who has made the project the success that it is.
 
-  * [![@kalisjoshua](https://img.shields.io/badge/maintainer-@kalisjoshua-blue.svg)](https://twitter.com/kalisjoshua)
+<!--
+## Contributors
 
-This list is meant to be additive only; append entries never re-order the list.
-The only changes to the list should status change from "Maintainer" to
+  -
+-->
+
+## Maintainers
+
+  - [Josh Kalis](https://github.com/kalisjoshua)
+
+These lists are meant to be additive only; never re-order the list. The only
+changes to existing items should be a status change from "Maintainer" to
 "Contributor"; *once you have contributed you can never not have contributed*.
-
-
-[Contributor]: https://img.shields.io/badge/contributor--green.svg
-[Maintainer]: https://img.shields.io/badge/-maintainer-blue.svg

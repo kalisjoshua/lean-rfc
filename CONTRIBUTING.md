@@ -1,14 +1,17 @@
-# Contributing Guide
+# Contributing
 
-In addition to this guide, [GitHub Guides] has additional content on best
-practices for [Contributing to Open Source on GitHub].
+In addition to this document, [GitHub Guides] has content on best practices for
+[Contributing to Open Source].
 
+The two levels of contributing are: Contributor, and Maintainer.
 
-## Code of Conduct
-
-This project adheres to a [Code of Conduct] borrowed from the [Contributor
-Covenant]; everyone is expected to uphold this code. Please report unacceptable
-behavior to at least one of the people listed in the [Maintainers] list.
+| Contributor | Maintainer |   |
+| ----------- | ---------- | - |
+| Yes         | Yes        | Follow the [Code of Conduct]
+| Yes         | Yes        | Adhere to this document
+| No          | Yes        | Take reparatory actions when [Code of Conduct infractions arise
+| No          | Yes        | Respond to discussions on issues and pull requests in a [timely manner](#response-time)
+| Yes         | Yes        | Freely release exclusive rights to all contributions of code, or other content, to this project
 
 
 ## Response Time
@@ -29,8 +32,7 @@ this does not become a normal event.
 
 ## Changes
 
-Changes to this project should follow [Lean RFC] guidelines. Any questions
-should be posed as [issues] and discussed there.
+Changes to this project should follow [Lean RFC] guidelines.
 
 
 ### Commit Messages
@@ -46,17 +48,13 @@ $ git config --add commit.template ./commit.template
 *This command will only set this template file as the default commit template
 for this repository and will not affect any of your other repositories.*
 
-Read more about the [Git Commit Templating] feature.
+Read more about [Git Commit Templating].
 
 
-[Code of Conduct]: CODE_OF_CONDUCT.md
 [commit message format]: commit.template
-[Contributing Guide]: CONTRIBUTING.md
-[Contributing to Open Source on GitHub]: https://guides.github.com/activities/contributing-to-open-source/
+[Contributing to Open Source]: https://guides.github.com/activities/contributing-to-open-source/
 [Contributor Covenant]: http://contributor-covenant.org
 [Git Commit Templating]: https://git-scm.com/docs/git-commit#git-commit---templateltfilegt
 [GitHub Guides]: https://guides.github.com/
-[Contributors]: humans.md
-[Maintainers]: humans.md
 [issues]: https://github.com/kalisjoshua/lean-rfc/issues
-[Lean RFC]: rfc/PROCESS.md
+[Lean RFC]: https://github.com/kalisjoshua/lean-rfc
