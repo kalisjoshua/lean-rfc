@@ -97,8 +97,8 @@ implementation. The, more verbose, phases of the process are as follows:
 
   1. Fork the RFC repo; commit changes to your development branch.
   2. Copy `0000-template.md` to `active/0000-my-feature.md`
-    + Where "my-feature" is descriptive
-    + Don't assign an RFC number; leave "0000"
+      + Where "my-feature" is descriptive
+      + Don't assign an RFC number; leave "0000"
   3. Fill in the RFC. Put care into the details: RFCs that do not present
     convincing motivation, demonstrate understanding of the impact of the
     design, or are disingenuous about the drawbacks or alternatives tend to be
@@ -112,28 +112,28 @@ implementation. The, more verbose, phases of the process are as follows:
     trusted member of the project maintainers group who is familiar with the
     RFC process who will help to move the RFC forward and ensure that the right
     people see and review it.
-  7. Build consensus and integrate feedback. RFCs that have broad support are
+  6. Build consensus and integrate feedback. RFCs that have broad support are
     much more likely to make progress than those that don't receive any
     comments. The shepherd assigned to your RFC should help you get feedback.
-    + The shepherd *may* schedule meetings with the author and/or relevant
-      stakeholders to discuss the issues in greater detail.
-    + As often as possible all discussion about the RFC that is relevant to its
-      progression should be documented in the pull request comment thread;
-      including any offline discussions.
-    + RFCs rarely go through this process unchanged, especially as alternatives
-      and drawbacks are shown. You can make edits, big and small, to the RFC to
-      clarify or change the design, but make changes as new commits to the pull
-      request, and leave a comment on the pull request explaining your changes.
-      Specifically, do not squash or rebase commits after they are visible on
-      the pull request.
-  8. After both proponents, and opponents have clarified, and defended their
+      + The shepherd *may* schedule meetings with the author and/or relevant
+        stakeholders to discuss the issues in greater detail.
+      + As often as possible all discussion about the RFC that is relevant to
+        its progression should be documented in the pull request comment
+        thread; including any offline discussions.
+      + RFCs rarely go through this process unchanged, especially as
+        alternatives and drawbacks are shown. You can make edits, big and
+        small, to the RFC to clarify or change the design, but make changes as
+        new commits to the pull request, and leave a comment on the pull
+        request explaining your changes. Specifically, do not squash or rebase
+        commits after they are visible on the pull request.
+  7. After both proponents, and opponents have clarified, and defended their
     respective positions the conversation will settle and then the RFC will
     enter its *final comment period* (FCP). This is a final opportunity for the
     community to comment on the pull request. The FCP is a reminder for all
     members of the project maintainers group to be aware of the RFC.
-    + The FCP, typically, lasts one week but may be extended if consensus
-      cannot be reached.
-  9. At the end of the FCP, the RFC will either be: accepted, by merging the
+      + The FCP, typically, lasts one week but may be extended if consensus
+        cannot be reached.
+  8. At the end of the FCP, the RFC will either be: accepted, by merging the
     pull request, then assigning the RFC a number (corresponding to the pull
     request number), at which point the RFC is "active", or rejected by closing
     the pull request.
@@ -165,10 +165,10 @@ On occasion, there may not be consensus but discussion has stalled. Lean RFC
 suggests that projects document what strategy should be enacted in these cases;
 some possible options are:
 
-    1. Majority vote among a group of "voting members"
-    2. Designated decision maker makes a judgement
-    3. Default decision to not include controversial RFCs
-    4. Tie-breaking shepherd vote
+  1. Majority vote among a group of "voting members"
+  2. Designated decision maker makes a judgement
+  3. Default decision to not include controversial RFCs
+  4. Tie-breaking shepherd vote
 
 
 ## An active RFC
