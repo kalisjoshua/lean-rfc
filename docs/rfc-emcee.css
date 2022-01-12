@@ -1,0 +1,283 @@
+:root {
+  --blond: #f3f7ba;
+  --blond: #ffc15a;
+  --carmine: #E46B67;
+  --mint: #9acea3;
+  --mint: #8ac261;
+  --mint: #83AC8C;
+  --jacarta: #333357;
+  --jacarta: #1f2434;
+  --jacarta: #372E2B;
+  --slate: #467292;
+}
+
+*, *:before, *:after {box-sizing: border-box;}
+
+a {
+  color: var(--slate);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+article {
+  --rotation: 3deg;
+  background: white;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin-bottom: 3ex;
+  padding: 0 2ex 2ex;
+  position: relative;
+  transition: 300ms;
+}
+
+article:hover {
+  border-color: #777;
+}
+
+article:before, article:after {
+  background: #777;
+  bottom: 15px;
+
+  --box-shadow: 0 15px 10px #777;
+  -webkit-box-shadow: var(--box-shadow);
+  -moz-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+
+  content: "";
+  left: 10px;
+  max-width: 300px;
+  opacity: 0.4;
+  position: absolute;
+  top: 80%;
+
+  --transform: rotate(calc(var(--rotation) * -1));
+  -webkit-transform: var(--transform);
+  -moz-transform: var(--transform);
+  -o-transform: var(--transform);
+  -ms-transform: var(--transform);
+  transform: var(--transform);
+
+  width: 50%;
+  z-index: -1;
+  transition: 300ms;
+}
+
+article:after {
+  --transform: rotate(var(--rotation));
+  -webkit-transform: var(--transform);
+  -moz-transform: var(--transform);
+  -o-transform: var(--transform);
+  -ms-transform: var(--transform);
+  transform: var(--transform);
+  right: 10px;
+  left: auto;
+}
+
+article:hover:before, article:hover:after {
+  --box-shadow: 0 10px 20px #777;
+  --rotation: 1deg;
+  max-width: 49%;
+  opacity: 1;
+  bottom: 5px;
+}
+
+article:not(:target) > *:not(h1, h2.Summary + p) {
+  display: none;
+}
+
+article:target {
+  border-width: 10px;
+  border-width: 2ex;
+}
+
+article h1 {
+  text-transform: capitalize;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  color: var(--jacarta);
+}
+
+html {
+  background: var(--slate);
+  min-height: 100%;
+  padding-bottom: 12ex;
+}
+
+html:before {
+  --grad: linear-gradient(
+    /* 0.5turn, */
+    145deg,
+    var(--blond)    0%,
+    var(--blond)   10%,
+    transparent    10%,
+    transparent    20%,
+    var(--mint)    20%,
+    var(--mint)    30%,
+    transparent    30%,
+    transparent    40%,
+    var(--jacarta) 40%,
+    var(--jacarta) 50%,
+    transparent    50%,
+    transparent    60%,
+    var(--slate)   60%,
+    var(--slate)   70%,
+    var(--mint)    70%,
+    var(--mint)    80%,
+    var(--jacarta) 80%,
+    var(--jacarta) 90%,
+    transparent    90%
+  );
+
+  background-color: var(--jacarta);
+  background-image: var(--grad), var(--grad), var(--grad), var(--grad);
+  background-blend-mode: lighten, hard-light, difference, screen;
+  background-size: 133px, 255px, 323px;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+body:before,
+html:after {
+  background-image: linear-gradient(180deg, transparent 100px, var(--slate) 80%);
+  box-shadow: inset 0 3ex 13ex 0 rgba(0, 0, 0, 0.2);
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.85;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.filterLinks {
+  display: flex;
+}
+
+.filterLinks ul:first-of-type {
+  flex-basis: 30%;
+}
+
+.filterLinks ul:last-of-type {
+  flex-basis: 70%;
+}
+
+.filterLinks ul {
+  line-height: 4ex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filterLinks h3 {
+  margin: 1.25ex 0;
+}
+
+.filterLinks li {
+  display: inline-flex;
+  margin: 1ex 0;
+  padding: 0;
+}
+
+.filterLinks li span {
+  background: var(--carmine);
+  border: 1px solid var(--carmine);
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  margin: 0 3px;
+  padding: 0 1ex;
+  text-decoration: none;
+  transition: 500ms;
+  user-select: none;
+}
+
+.filterLinks li span:hover,
+.filterLinks li[data-isactive="true"] span {
+  background: transparent;
+  background: white;
+  color: var(--carmine);
+}
+
+.layout {
+  --width: 60em;
+
+  background: white;
+  box-shadow: 2rem 6rem 3rem 2rem rgba(0, 0, 0, 0.3);
+  display: table;
+  margin: 0 auto;
+  max-width: var(--width);
+  padding: 0 2ex;
+  position: relative;
+  width: var(--width);
+  z-index: 10;
+}
+
+.navigation {
+  background: var(--slate);
+  box-shadow:
+    rgba(0, 0, 0, 0.9) 0px -20px 30px -40px inset,
+    rgba(0, 0, 0, 0.5) 0px -40px 60px -70px inset,
+    rgba(0, 0, 0, 0.5) 0px  40px 60px -70px inset,
+    rgba(0, 0, 0, 0.9) 0px  20px 30px -40px inset
+  ;
+  color: white;
+  margin: -2ex;
+  margin-bottom: 4ex;
+  padding: 2ex;
+}
+
+.search {
+  display: flex;
+  padding: 0 0 3ex;
+}
+
+.search h3 {
+  margin: 0;
+}
+
+.search input {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid white;
+  display: block;
+  font-size: 120%;
+  margin: 0 1ex;
+  outline: none;
+  transition: 500ms;
+  width: 100%;
+}
+
+.search input:focus {
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.skip-to-main {
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
+}
+
+.skip-to-main:focus {
+  height: auto;
+  position: static;
+  width: auto;
+}
