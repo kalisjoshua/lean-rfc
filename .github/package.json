@@ -1,0 +1,56 @@
+{
+  "name": "lean-rfc-workflows",
+  "homepage": "https://github.com/kalisjoshua/lean-rfc#readme",
+  "private": true,
+  "version": "1.1.0",
+  "author": "Joshua T Kalis <kalisjoshua@gmail.com> (http://kalisjoshua.me/)",
+  "description": "A RFC viewer application.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalisjoshua/lean-rfc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kalisjoshua/lean-rfc/issues"
+  },
+  "scripts": {
+    "build": "node ./docs-generator/index.js",
+    "dev": "npm run test -- --watch",
+    "local": "npm run mock && npm run serve",
+    "mock": "npm run build -- --mock",
+    "serve": "http-server ../docs",
+    "start": "npm run build && npm run serve",
+    "test": "jest .github docs rfc",
+    "validate": "node ./rfc-validator/index.js"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "html-minifier": "^4.0.0",
+    "http-server": "^14.1.0",
+    "jest": "^27.4.7",
+    "markdownlint": "^0.25.1",
+    "marked": "^4.0.10",
+    "sanitize-html": "^2.6.1"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{js,mjs}",
+      "!**/.eslintrc.js",
+      "!**/coverage/**",
+      "!**/node_modules/**"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  }
+}

@@ -18,16 +18,15 @@ The two levels of contributing are: Contributor, and Maintainer.
 
 Maintainers should respond to all new comments, issues, and pull requests by
 the next business day; even if that response is to say that it will be longer
-before any meaningful feedback can be given. *Please allow for some leniency
-during any holidays.*
+before any meaningful feedback can be given. *Leniency during any holidays is
+expected.*
 
 It is important to offer transparency in what is happening with a proposed
 change. Not all proposed changes will be accepted as not all changes will align
 with the goal of the project.
 
 If you propose changes and don't hear back after a day or two feel free to
-comment again to hopefully ping us again to remind us to respond; we hope that
-this does not become a normal event.
+comment again to hopefully ping the team again to remind them to respond.
 
 
 ## Changes
@@ -42,7 +41,7 @@ directory of this repository). You can set this template as the default text
 for any commit messages by using the following command:
 
 ```bash
-$ git config --add commit.template ./commit.template
+$ git config --add commit.template ./.github/commit.template
 ```
 
 *This command will only set this template file as the default commit template

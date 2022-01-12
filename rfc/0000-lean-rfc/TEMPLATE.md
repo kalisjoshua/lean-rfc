@@ -1,14 +1,9 @@
 # Title-cased Name of the Feature
 
-  - Status: proposal (after review and decision: active, rejected, postponed)
-  - Type: (new feature, enhancement, deprecation)
-  - Start Date: (fill me in with today's date, YYYY-MM-DD)
-  - Discussion: (fill me in with link to RFC discussion - shepherd will
-    complete this)
-  - Supersedes: (fill me in with a link to RFC this supersedes if applicable,
-    otherwise "none")
-  - Superseded by: (fill me in with a link to RFC this is superseded by if
-    applicable, otherwise "none")
+  * Discussion: <!-- fill in; link to RFC discussion thread -->
+  * Replaces: <!-- fill in; link to RFC, or "none" -->
+  * Replaced by: <!-- fill in; link to RFC, or "none" -->
+  * Topics: <!-- fill in; free form topics: auth, language, tooling -->
 
 
 ## Summary
