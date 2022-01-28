@@ -1,0 +1,6 @@
+#! /bin/bash
+
+echo "Remember: no spaces, use dashes; short and descriptive."
+read -p "What will the name be of your RFC?: " NAME
+mkdir rfc/0000-$NAME
+cp rfc/0000-lean-rfc/TEMPLATE.md rfc/0000-$NAME/RFC.md

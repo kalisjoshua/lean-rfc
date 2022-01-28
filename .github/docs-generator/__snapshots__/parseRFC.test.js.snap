@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parseRFC should parse a complete and valid RFC markdown 1`] = `
+Object {
+  "html": "<h1><a href=\\"##0001-mock-rfc\\">0001 - Mock RFC 0001</a></h1>
+<ul>
+<li>Discussion: <a href=\\"https://example.com/discussion\\">https://example.com/discussion</a></li>
+<li>Replaces: none</li>
+<li>Replaced by: none</li>
+<li>Topics: mock, test</li>
+</ul>
+<h2 class=\\"Summary\\">Summary</h2>
+<p>Lorem ipsum dolor sit amet.</p>
+",
+  "id": "#0001-mock-rfc",
+  "replacedBy": "none",
+  "replaces": "none",
+  "title": "Mock RFC 0001",
+  "topics": Array [
+    "mock",
+    "test",
+  ],
+  "type": "root",
+}
+`;
+
+exports[`parseRFC should parse partial RFC markdown 1`] = `
+Object {
+  "html": "<h1><a href=\\"##0002-mock-rfc\\">0002 - Mock RFC 0002</a></h1>
+<ul>
+<li>Replaces: none</li>
+<li>Replaced by: none</li>
+<li>Topics: mock, test</li>
+</ul>
+<h2 class=\\"Summary\\">Summary</h2>
+<p>Lorem ipsum dolor sit amet.</p>
+",
+  "id": "#0002-mock-rfc",
+  "replacedBy": "none",
+  "replaces": "none",
+  "title": "Mock RFC 0002",
+  "topics": Array [
+    "mock",
+    "test",
+  ],
+  "type": "root",
+}
+`;
+
+exports[`parseRFC should parse partial RFC markdown 2`] = `
+Object {
+  "html": "<h1><a href=\\"##0003-mock-rfc\\">0003 - Mock RFC 0003</a></h1>
+<ul>
+<li>Replaced by: none</li>
+<li>Topics: mock, test</li>
+</ul>
+<h2 class=\\"Summary\\">Summary</h2>
+<p>Lorem ipsum dolor sit amet.</p>
+",
+  "id": "#0003-mock-rfc",
+  "replacedBy": "none",
+  "title": "Mock RFC 0003",
+  "topics": Array [
+    "mock",
+    "test",
+  ],
+  "type": "replacement",
+}
+`;
+
+exports[`parseRFC should parse partial RFC markdown 3`] = `
+Object {
+  "html": "<h1><a href=\\"##0004-mock-rfc\\">0004 - Mock RFC 0004</a></h1>
+<ul>
+<li>Topics: mock, test</li>
+</ul>
+<h2 class=\\"Summary\\">Summary</h2>
+<p>Lorem ipsum dolor sit amet.</p>
+",
+  "id": "#0004-mock-rfc",
+  "title": "Mock RFC 0004",
+  "topics": Array [
+    "mock",
+    "test",
+  ],
+  "type": "replacement",
+}
+`;
+
+exports[`parseRFC should parse partial RFC markdown 4`] = `
+Object {
+  "html": "<h1><a href=\\"##0005-mock-rfc\\">0005 - Mock RFC 0005</a></h1>
+<h2 class=\\"Summary\\">Summary</h2>
+<p>Lorem ipsum dolor sit amet.</p>
+",
+  "id": "#0005-mock-rfc",
+  "title": "Mock RFC 0005",
+  "type": "replacement",
+}
+`;

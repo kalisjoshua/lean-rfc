@@ -1,0 +1,35 @@
+{
+  "MD004": {
+    "//": "alias: ul-style - allow for different list indicator characters per level",
+    "style": "sublist"
+  },
+  "MD007": {
+    "//": "alias: ul-indent - start indented and nested lists are further indented",
+    "indent": 4,
+    "start_indented": true,
+    "start_indent": 2
+  },
+  "MD012": {
+    "//": "alias: no-multiple-blanks - allow for extra whitespace",
+    "maximum": 2
+  },
+  "MD013": {
+    "//": "alias: line-length - the max length of lines",
+    "line_length": 9999
+  },
+  "MD022": {
+    "//": "alias: blanks-around-headings, blanks-around-headers",
+    "lines_above": 2,
+    "lines_below": 0
+  },
+  "MD029": {
+    "//": "alias: ol-prefix - require an ordered list numbering or all 1s",
+    "style": "one_or_ordered"
+  },
+  "//": "MD034: alias: no-bare-urls - literal URLs without friendly text",
+  "MD034": false,
+  "MD046": {
+    "//": "alias: code-block-style",
+    "style": "fenced"
+  }
+}
