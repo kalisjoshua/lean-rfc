@@ -91,8 +91,8 @@ properly link to each other.
         comments on the pull request
   6. Once all feedback has been considered and no further changes are likely
       - An RFC will be **Accepted** and then MUST then be assigned a number
-      - An RFC will be **Rejected** and MUST have clear reasons why in the
-        described in the comments
+      - An RFC will be **Rejected** and MUST have clear reasons why described
+        in the comments
 
 
 ## The role of the shepherd
